@@ -1,0 +1,25 @@
+.todo-list-item {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  font-size: 1.3rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+  }
+
+  &--done {
+    text-decoration: line-through;
+  }
+
+  &--important {
+    font-weight: bold;
+    color: #3f51b5;
+  }
+
+  &__label {
+    margin-left: 1rem;
+    margin-right: auto;
+    cursor: pointer;
+  }
+}
