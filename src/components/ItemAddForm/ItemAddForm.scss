@@ -1,0 +1,12 @@
+.item-add-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  &__input {
+    &.MuiFormControl-root {
+      flex-grow: 1;
+      margin-right: 15px;
+    }
+  }
+}

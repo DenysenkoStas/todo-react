@@ -1,11 +1,15 @@
 import TodoListItem from '../TodoListItem/TodoListItem';
 import './TodoList.scss';
 
-const TodoList = ({todos}) => {
+const TodoList = ({todos, onDeleted}) => {
     const elements = todos.map((item) => {
         const {id, ...itemProps} = item;
         return (
-            <TodoListItem key={id} {...itemProps}/>
+            <TodoListItem
+                key={id}
+                {...itemProps}
+                onDeleted={() => onDeleted(id)}
+            />
         );
     });
 
